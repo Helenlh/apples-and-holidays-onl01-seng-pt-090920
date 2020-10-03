@@ -20,14 +20,14 @@ def second_supply_for_fourth_of_july(holiday_hash)
   # return the second element in the 4th of July array 
   
   holiday_hash.each do |season, holiday|
-  holiday.each do | |
+    holiday.split " "
+    holiday.capitalize!
+    holiday.to_s 
+  holiday.each do
   
   if holiday == "fourth_of_july
-    answer = fourth_of_july[1].split " "
-    answer.each do |word|
-    word.capitalize!
-    word.to_s 
-    answer 
+    answer = Fourth_of_July[1]
+    return answer 
   end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
