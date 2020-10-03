@@ -13,6 +13,7 @@ def second_supply_for_fourth_of_july(holiday_hash)
   #   :fall => {
   #     :thanksgiving => ["Turkey"]
   #   }
+  #    :summer => {
   #     :memorial_day => ["BBQ"]
   #   }
   # }
@@ -34,11 +35,12 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # add the second argument, which is a supply, to BOTH the
   # Christmas AND  New Year's arrays
 while season == winter 
-  holiday >> supply
+  holiday >> [supply]
 end
 
 
-def add_supply_to_memorial_day(holiday_hash, supply)
+def add_supply_to_m
+memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
 
