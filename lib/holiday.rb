@@ -50,7 +50,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # code here
   # remember to return the updated hash 
   
-  holiday_hash => {winter => New Years => [hats, streamers, firecrackers]}
+  holiday_hash => {winter => #"{holiday_name} => [supply_array]}
 end
 
 def all_winter_holiday_supplies(holiday_hash)
@@ -70,6 +70,17 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
 end
+str = "String Counting"       .inspect 
+puts str.delete "ing"
+
+holiday_hash.each do |season1, holiday1|
+  new_season1 = season1.to_s
+  new_season1.delete "=>"
+  
+  
+end 
+
+
 
 def all_holidays_with_bbq(holiday_hash)
   #return an array of holiday names (as symbols) where supply lists
